@@ -1929,55 +1929,9 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/addGroup.vue?vue&type=script&lang=js& ***!
   \*******************************************************************************************************************************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {
-      numbergroup: '',
-      litera: '',
-      validationErrors: '',
-      alert: ''
-    };
-  },
-  methods: {
-    createclass: function createclass() {
-      var _this = this;
-
-      var request = {
-        numbergroup: this.numbergroup,
-        litera: this.litera,
-        group: this.numbergroup + this.litera
-      };
-      this.validationErrors = 0;
-      axios__WEBPACK_IMPORTED_MODULE_0___default.a.post('/api/addclass', request).then(function (response) {
-        _this.alert = 1;
-      })["catch"](function (error) {
-        if (error.response.status == 422) {
-          _this.validationErrors = error.response.data.errors;
-        }
-      });
-    }
-  }
-});
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /var/www/laravelcrud/resources/js/components/addGroup.vue: Unexpected token, expected \",\" (34:31)\n\n\u001b[0m \u001b[90m 32 | \u001b[39m            \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mvalidationErrors \u001b[33m=\u001b[39m \u001b[35m0\u001b[39m             \u001b[0m\n\u001b[0m \u001b[90m 33 | \u001b[39m            axios\u001b[33m.\u001b[39mpost(\u001b[32m'/api/addclass'\u001b[39m\u001b[33m,\u001b[39m request)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 34 | \u001b[39m                \u001b[33m.\u001b[39mthen(response {\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 35 | \u001b[39m                    \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39malert \u001b[33m=\u001b[39m \u001b[35m1\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 36 | \u001b[39m                })\u001b[0m\n\u001b[0m \u001b[90m 37 | \u001b[39m                \u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m((error)\u001b[33m=>\u001b[39m {\u001b[0m\n    at Parser._raise (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:754:17)\n    at Parser.raiseWithData (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:747:17)\n    at Parser.raise (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:741:17)\n    at Parser.unexpected (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:8844:16)\n    at Parser.expect (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:8830:28)\n    at Parser.parseCallExpressionArguments (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:9867:14)\n    at Parser.parseSubscript (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:9787:31)\n    at Parser.parseSubscripts (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:9716:19)\n    at Parser.parseExprSubscripts (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:9699:17)\n    at Parser.parseMaybeUnary (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:9673:21)\n    at Parser.parseExprOps (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:9543:23)\n    at Parser.parseMaybeConditional (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:9516:23)\n    at Parser.parseMaybeAssign (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:9471:21)\n    at Parser.parseExpression (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:9423:23)\n    at Parser.parseStatementContent (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:11322:23)\n    at Parser.parseStatement (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:11193:17)\n    at Parser.parseBlockOrModuleBlockBody (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:11768:25)\n    at Parser.parseBlockBody (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:11754:10)\n    at Parser.parseBlock (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:11738:10)\n    at Parser.parseFunctionBody (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:10745:24)\n    at Parser.parseFunctionBodyAndFinish (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:10728:10)\n    at Parser.parseMethod (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:10690:10)\n    at Parser.parseObjectMethod (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:10606:19)\n    at Parser.parseObjPropValue (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:10648:23)\n    at Parser.parseObjectMember (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:10572:10)\n    at Parser.parseObj (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:10485:25)\n    at Parser.parseExprAtom (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:10092:28)\n    at Parser.parseExprSubscripts (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:9693:23)\n    at Parser.parseMaybeUnary (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:9673:21)\n    at Parser.parseExprOps (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:9543:23)\n    at Parser.parseMaybeConditional (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:9516:23)\n    at Parser.parseMaybeAssign (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:9471:21)\n    at Parser.parseObjectProperty (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:10623:101)\n    at Parser.parseObjPropValue (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:10648:101)\n    at Parser.parseObjectMember (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:10572:10)\n    at Parser.parseObj (/var/www/laravelcrud/node_modules/@babel/parser/lib/index.js:10485:25)");
 
 /***/ }),
 
@@ -36087,8 +36041,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /var/www/app/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /var/www/app/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /var/www/laravelcrud/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /var/www/laravelcrud/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

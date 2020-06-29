@@ -31,13 +31,14 @@ export default {
         };  
             this.validationErrors = 0             
             axios.post('/api/addclass', request)
-                .then(response => {
-                    this.alert = 1;
+                .then(response {
+                    this.alert = 1
                 })
                 .catch((error)=> {
                     if(error.response.status == 422)
                     {
                         this.validationErrors = error.response.data.errors
+                        this.alert = 0
                     }
                 })
         }
